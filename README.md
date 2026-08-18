@@ -4,7 +4,7 @@
 
 [![CI](https://github.com/wdinrev/dou-source/actions/workflows/build_push.yml/badge.svg)](https://github.com/wdinrev/dou-source/actions/workflows/build_push.yml)
 
-**Repository Ekstensi Anime (Indonesian & Global Sources) untuk Aniyomi, Anikku, Dantotsu, & Mihon variants.**
+**Repository Ekstensi Anime Khusus Sumber Indonesia untuk Aniyomi, Anikku, Dantotsu, & Mihon variants.**
 
 </div>
 
@@ -31,7 +31,6 @@ https://raw.githubusercontent.com/wdinrev/dou-repo/main/index.min.json
 - **Oploverz**
 - **OtakuDesu**
 - **Samehadaku**
-- Serta sumber universal di kategori `all`.
 
 ---
 
