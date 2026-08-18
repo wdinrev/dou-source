@@ -26,6 +26,7 @@ https://raw.githubusercontent.com/wdinrev/dou-repo/main/index.min.json
 - **Kuramanime**
 - **Kuronime**
 - **MiniOppai** (NSFW)
+- **Nekopoi** (NSFW)
 - **Neonime**
 - **NimeGami**
 - **Oploverz**
