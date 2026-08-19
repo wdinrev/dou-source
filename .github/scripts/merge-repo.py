@@ -62,11 +62,7 @@ repo_meta = {
         "shortName": "Dou",
         "website": "https://github.com/wdinrev/dou-source",
         "signingKeyFingerprint": "af1193f39628878e5a23796ffd06aa7541996f85555dcfaf5f14a21078d5a960",
-    },
-    "name": "Dou",
-    "shortName": "Dou",
-    "website": "https://github.com/wdinrev/dou-source",
-    "signingKeyFingerprint": "af1193f39628878e5a23796ffd06aa7541996f85555dcfaf5f14a21078d5a960",
+    }
 }
 with REMOTE_REPO.joinpath("repo.json").open("w", encoding="utf-8") as repo_file:
     json.dump(repo_meta, repo_file, ensure_ascii=False, indent=2)
