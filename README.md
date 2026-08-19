@@ -1,6 +1,6 @@
 <div align="center">
 
-# ⛩️ Dou Extensions (動)
+# ☄️ Dou Extensions (動)
 
 [![CI](https://github.com/wdinrev/dou-source/actions/workflows/build_push.yml/badge.svg)](https://github.com/wdinrev/dou-source/actions/workflows/build_push.yml)
 

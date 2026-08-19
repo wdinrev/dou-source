@@ -1,4 +1,4 @@
-# ⛩️ Panduan Kontribusi - Dou Extensions (動)
+# ☄️ Panduan Kontribusi - Dou Extensions (動)
 
 Terima kasih atas minat Anda untuk berkontribusi pada Dou. Repositori ini khusus merawat dan mengembangkan ekstensi anime berbahasa Indonesia untuk Anikku, Aniyomi, dan Dantotsu.
 
