@@ -58,8 +58,8 @@ with REMOTE_REPO.joinpath("index.min.json").open("w", encoding="utf-8") as index
     json.dump(index, index_min_file, ensure_ascii=False, separators=(",", ":"))
 repo_meta = {
     "meta": {
-        "name": "Dou",
-        "shortName": "wdinrev-dou",
+        "name": "wdinrev",
+        "shortName": "wdinrev",
         "website": "https://github.com/wdinrev/dou-source",
         "signingKeyFingerprint": "af1193f39628878e5a23796ffd06aa7541996f85555dcfaf5f14a21078d5a960",
     }
