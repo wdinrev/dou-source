@@ -57,8 +57,14 @@ for item in index:
 with REMOTE_REPO.joinpath("index.min.json").open("w", encoding="utf-8") as index_min_file:
     json.dump(index, index_min_file, ensure_ascii=False, separators=(",", ":"))
 repo_meta = {
+    "meta": {
+        "name": "Dou",
+        "shortName": "Dou",
+        "website": "https://github.com/wdinrev/dou-source",
+        "signingKeyFingerprint": "af1193f39628878e5a23796ffd06aa7541996f85555dcfaf5f14a21078d5a960",
+    },
     "name": "Dou",
-    "shortName": "DOU",
+    "shortName": "Dou",
     "website": "https://github.com/wdinrev/dou-source",
     "signingKeyFingerprint": "af1193f39628878e5a23796ffd06aa7541996f85555dcfaf5f14a21078d5a960",
 }
