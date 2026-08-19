@@ -2,8 +2,8 @@
 
 # ⛩️ Dou Extensions (動)
 
-[![Install on Anikku](https://img.shields.io/badge/Install%20on-Anikku-E65100?style=for-the-badge&logo=android)](https://intradeus.github.io/http-protocol-redirector/?r=anikku://add-repo?url=https://raw.githubusercontent.com/wdinrev/dou-repo/repo/index.min.json)
-[![Install on Aniyomi](https://img.shields.io/badge/Install%20on-Aniyomi-C2185B?style=for-the-badge&logo=android)](https://intradeus.github.io/http-protocol-redirector/?r=aniyomi://add-repo?url=https://raw.githubusercontent.com/wdinrev/dou-repo/repo/index.min.json)
+[![Install on Anikku](https://img.shields.io/badge/Install%20on-Anikku-E65100?style=for-the-badge&logo=android)](https://intradeus.github.io/http-protocol-redirector/?r=anikku://add-repo?url=https://raw.githubusercontent.com/wdinrev/dou-repo/main/index.min.json)
+[![Install on Aniyomi](https://img.shields.io/badge/Install%20on-Aniyomi-C2185B?style=for-the-badge&logo=android)](https://intradeus.github.io/http-protocol-redirector/?r=aniyomi://add-repo?url=https://raw.githubusercontent.com/wdinrev/dou-repo/main/index.min.json)
 [![CI](https://github.com/wdinrev/dou-source/actions/workflows/build_push.yml/badge.svg)](https://github.com/wdinrev/dou-source/actions/workflows/build_push.yml)
 
 **Katalog Repositori Ekstensi Anime Khusus Bahasa Indonesia untuk Anikku, Aniyomi, Dantotsu, & varian Mihon.**
@@ -22,11 +22,10 @@ Klik salah satu tombol badge di atas (*Install on Anikku* atau *Install on Aniyo
 ### Opsi 2: Manual (Salin URL)
 1. Buka aplikasi **Anikku / Aniyomi / Dantotsu**.
 2. Masuk ke menu **More > Settings > Browse > Extension repositories / Edit repos > Add Repo**.
-3. Masukkan salah satu URL berikut:
+3. Masukkan URL berikut:
    ```text
-   https://raw.githubusercontent.com/wdinrev/dou-repo/repo/index.min.json
+   https://raw.githubusercontent.com/wdinrev/dou-repo/main/index.min.json
    ```
-   *(Atau alternatif: `https://raw.githubusercontent.com/wdinrev/dou-repo/main/index.min.json`)*
 
 ---
 
