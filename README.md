@@ -1,6 +1,8 @@
 <div align="center">
 
-# ☄️ Dou Extensions (動)
+<img src="./.github/readme-images/app-icon.png" width="96" height="96" alt="Dou" />
+
+# Dou (動)
 
 [![CI](https://github.com/wdinrev/dou-source/actions/workflows/build_push.yml/badge.svg)](https://github.com/wdinrev/dou-source/actions/workflows/build_push.yml)
 
