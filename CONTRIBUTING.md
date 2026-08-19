@@ -1,34 +1,34 @@
 # ⛩️ Panduan Kontribusi - Dou Extensions (動)
 
-Terima kasih atas minat Anda untuk berkontribusi pada **Dou**! Repositori ini khusus merawat dan mengembangkan ekstensi anime berbahasa Indonesia untuk Aniyomi, Anikku, Dantotsu, dan varian Mihon.
+Terima kasih atas minat Anda untuk berkontribusi pada Dou. Repositori ini khusus merawat dan mengembangkan ekstensi anime berbahasa Indonesia untuk Anikku, Aniyomi, dan Dantotsu.
 
 ---
 
-## 📋 Daftar Isi
-1. [Prasyarat](#-prasyarat)
-2. [Struktur Repositori](#-struktur-repositori)
-3. [Menulis Ekstensi Baru](#-menulis-ekstensi-baru)
+## Daftar Isi
+1. [Prasyarat](#prasyarat)
+2. [Struktur Repositori](#struktur-repositori)
+3. [Menulis Ekstensi Baru](#menulis-ekstensi-baru)
    - [Struktur Folder](#1-struktur-folder)
-   - [Konfigurasi `build.gradle`](#2-konfigurasi-buildgradle)
-   - [Kelas Utama (`AnimeHttpSource`)](#3-kelas-utama-animehttpsource)
+   - [Konfigurasi build.gradle](#2-konfigurasi-buildgradle)
+   - [Kelas Utama (AnimeHttpSource)](#3-kelas-utama-animehttpsource)
    - [Ekstraksi Video & Multi-Source](#4-ekstraksi-video--multi-source)
-4. [Penanganan Konten NSFW](#-penanganan-konten-nsfw)
-5. [Testing & Build Lokal](#-testing--build-lokal)
-6. [Aturan Versi (*Version Bumping*)](#-aturan-versi-version-bumping)
-7. [Membuat Pull Request](#-membuat-pull-request)
+4. [Penanganan Konten NSFW](#penanganan-konten-nsfw)
+5. [Testing & Build Lokal](#testing--build-lokal)
+6. [Aturan Versi](#aturan-versi)
+7. [Membuat Pull Request](#membuat-pull-request)
 
 ---
 
-## 🛠️ Prasyarat
+## Prasyarat
 Sebelum mulai mengembangkan ekstensi, pastikan Anda telah menginstal:
-* **Java Development Kit (JDK) 17** (Temurin / OpenJDK 17).
-* **Android SDK** (API Level 34+).
-* **Android Studio** atau **VS Code** dengan ekstensi Kotlin & Gradle.
-* **Git**.
+* Java Development Kit (JDK) 17 (Temurin / OpenJDK 17).
+* Android SDK (API Level 34+).
+* Android Studio atau VS Code dengan ekstensi Kotlin & Gradle.
+* Git.
 
 ---
 
-## 📂 Struktur Repositori
+## Struktur Repositori
 
 ```text
 dou-source/
@@ -45,7 +45,7 @@ dou-source/
 
 ---
 
-## ✍️ Menulis Ekstensi Baru
+## Menulis Ekstensi Baru
 
 ### 1. Struktur Folder
 Setiap ekstensi berada di dalam direktori `src/id/<nama-sumber>/`:
@@ -65,7 +65,7 @@ src/id/contoh/
     └── Filters.kt   (opsional)
 ```
 
-### 2. Konfigurasi `build.gradle`
+### 2. Konfigurasi build.gradle
 Contoh `build.gradle` standar:
 
 ```groovy
@@ -84,7 +84,7 @@ dependencies {
 }
 ```
 
-### 3. Kelas Utama (`AnimeHttpSource` / `ParsedAnimeHttpSource`)
+### 3. Kelas Utama (AnimeHttpSource / ParsedAnimeHttpSource)
 Setiap ekstensi harus mengimplementasikan alur scraping dasar:
 
 ```kotlin
@@ -136,12 +136,12 @@ class ContohAnime : ParsedAnimeHttpSource() {
 
 ### 4. Ekstraksi Video & Multi-Source
 * Selalu manfaatkan ekstraktor yang sudah tersedia di `lib/` (misal: `StreamWishExtractor`, `DoodExtractor`, `VidHideExtractor`, `FilemoonExtractor`, dll.).
-* Jika website target menggunakan template CMS umum (seperti Animestream), pertimbangkan untuk mendaftarkannya di `lib-multisrc/animestream`.
+* Jika website target menggunakan template CMS umum (seperti Animestream), daftarkan di `lib-multisrc/animestream`.
 
 ---
 
-## 🔞 Penanganan Konten NSFW
-Ekstensi yang menyediakan konten dewasa (18+ / Hentai / Ecchi eksplisit) **wajib** mencantumkan:
+## Penanganan Konten NSFW
+Ekstensi yang menyediakan konten dewasa (18+ / Hentai / Ecchi eksplisit) wajib mencantumkan:
 ```groovy
 ext {
     ...
@@ -151,7 +151,7 @@ ext {
 
 ---
 
-## 🧪 Testing & Build Lokal
+## Testing & Build Lokal
 
 Untuk menguji apakah ekstensi Anda bisa di-compile tanpa error:
 
@@ -165,19 +165,19 @@ Untuk menguji apakah ekstensi Anda bisa di-compile tanpa error:
 File APK hasil build lokal akan berada di:
 `src/id/<nama-ekstensi>/build/outputs/apk/debug/<nama-ekstensi>-debug.apk`
 
-Anda dapat menginstal file APK tersebut langsung ke HP / Emulator Android untuk pengujian fungsionalitas di aplikasi Aniyomi / Dantotsu.
+Anda dapat menginstal file APK tersebut langsung ke HP atau Emulator Android untuk pengujian di aplikasi Anikku, Aniyomi, atau Dantotsu.
 
 ---
 
-## 🔢 Aturan Versi (*Version Bumping*)
+## Aturan Versi
 
-Ketika Anda melakukan perbaikan (*bugfix*) atau pembaruan domain:
-1. **Wajib menaikkan `extVersionCode` sebanyak +1** pada `build.gradle` ekstensi terkait.
-2. Jika ada perubahan lib bersama, GitHub Actions secara cerdas akan otomatis mendeteksi dan meng-compile modul terdampak.
+Ketika Anda melakukan perbaikan atau pembaruan domain:
+1. Wajib menaikkan `extVersionCode` sebanyak +1 pada `build.gradle` ekstensi terkait.
+2. Jika ada perubahan lib bersama, GitHub Actions akan otomatis mendeteksi dan meng-compile modul terdampak.
 
 ---
 
-## 🚀 Membuat Pull Request (PR)
+## Membuat Pull Request
 
 1. Buat branch baru dari `main`:
    ```bash
@@ -186,6 +186,6 @@ Ketika Anda melakukan perbaikan (*bugfix*) atau pembaruan domain:
 2. Lakukan commit dengan pesan yang jelas (mengikuti Conventional Commits):
    * `feat(id/xyz): add new XYZ anime source`
    * `fix(id/xyz): update video extractor and fix baseUrl`
-3. Pastikan `./gradlew spotlessApply` sudah dijalankan agar kode rapi.
+3. Pastikan `./gradlew spotlessApply` sudah dijalankan sebelum commit.
 4. Buka Pull Request ke repository `wdinrev/dou-source` branch `main`.
-5. CI akan otomatis memverifikasi build ekstensi Anda!
+5. CI akan otomatis memverifikasi build ekstensi Anda.

@@ -1,26 +1,14 @@
 ext {
     extName = 'Nekopoi'
     extClass = '.Nekopoi'
-    extVersionCode = 1
+    extVersionCode = 2
     isNsfw = true
 }
 
 apply plugin: "kei.plugins.extension.legacy"
 
-android {
-    sourceSets {
-        test {
-            kotlin.srcDirs = ['test/kotlin']
-        }
-    }
-}
-
 dependencies {
     implementation(project(":lib:doodextractor"))
     implementation(project(":lib:streamwishextractor"))
     implementation(project(":lib:vidhideextractor"))
-
-    testImplementation(project(":core"))
-    testImplementation(libs.bundles.common)
-    testImplementation(libs.junit)
 }
